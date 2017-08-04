@@ -1,0 +1,136 @@
+@import "zcm.less";
+body{background:#fff}
+
+header{
+    background:#fa3432;color:#fff;
+    .h(92);.fs(28);display:flex;
+    justify-content: space-between;
+    align-items:center;
+    a{
+        .iconfont{color:#fff;}
+        .pl(23);.pr(23);
+        }
+}
+.data{
+    .h(222);color:#fff;
+    background:#ff3c01;
+    background:linear-gradient(to bottom,#ff3c01,#d80607);
+    p{.tc;.pt(50);
+    strong{.fs(68);}
+}
+    .th{.pt(35);.fs(30);
+} 
+}
+.support{
+        background:#fff;
+        .keys{.h(79);.fs(30);
+            color:#777;display:flex;align-items:center;
+            .tc; border-bottom:1px solid #f1f0f0;
+            p{width:50%;.h(30);border-right:1px solid #777;}
+               .last{border-right:none;}
+        }
+        .itemwrap{
+            .h(252);.fs(24);color:#ffc166;.mt(68);
+            .itemlist{
+                    margin: 0 auto;
+                    background:url(../images/detail_icon_bg.png) no-repeat;
+                    background-size:100% 100%;
+                    display:flex;
+                    flex-wrap:wrap;
+                    .tc;
+                    align-content:space-around;
+                    .h(204);.w(640);
+                .item{width:50%;
+                .iconfont{
+                        display:inline-block;
+                        .h(55);.w(55);border-radius:50%;
+                        border:3px solid #eee;
+                        .lh(55);.mr(13);
+                        }
+                }
+            }
+        }
+}
+.proccess{
+           .w(685);.h(15);
+           color:#8c8c8c;
+           background:#f0f0f0;
+           border-radius:10px;
+           .ml(15);
+           .pro-wrap{.pr(15);position:relative;}
+           .pro-font{.w(260);.h(15);background:#fb0502;border-radius:10px;}
+           .pro-block{.h(32);.w(60);.lh(32);.tc;background:#fb0502;
+                        position: absolute;
+                        .top(-55);
+                        .left(225);
+                       &:after{
+                           content :"";
+                           display:block;
+                           .triangle-b(15,#fb0502);
+                       }
+                  
+}
+           .pro-info{.fs(22);.w(685);
+                       .bc;.mt(30);
+                       display:flex;
+                       align-items:center;
+                       justify-content: space-between;
+                       
+                    em{color:#fb0502;}}
+}
+.footerlinks{
+            position:fixed;
+            .bottom(140);
+            left:0;right:0;
+           .tc;font-weight:bold;
+            a{color:#808080; .fs(22);}
+}
+footer{
+        position:fixed;
+        bottom:0;left:0;
+        right:0;
+        .h(105);
+        display:flex;
+        justify-content:space-between;
+         align-items: center;
+        .pl(30);
+        .pr(20);
+        background:#f1f1f1;
+       .earnings{color:#f90;.fs(32);text-decoration:underline;}
+       .investment{color:#fff;.h(82);.w(517);.fs(32);
+                background:#fa3432;
+               .tc;border-radius:10px;
+               .lh(82);
+               }
+    }
+#mask{
+    position: absolute;
+    display: none;
+    left:0;right:0;
+    .top(92);
+    .bottom(105);
+    background-color: rgba(0,0,0,.5);
+    
+    .nav{
+        background-color: #fff;
+        .h(120);
+        .flex_a();
+        a{
+            color:#f00;
+            .fs(28);
+            .tc();
+            width: 25%;
+            .iconfont{
+                 .fs(40);
+                display: block;
+                .bc();
+            
+            }
+            border-right:1px solid #ddd;
+            &:last-child{
+             border-right:none;
+            }
+        }
+    }
+}
+
